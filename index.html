@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/site.webmanifest">
+<link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+<div class="overlay">
+<h1 id="title">Raiqa Rasool Survey Form</h1>
+<i><p id="description">This is the form for sample survey form needed for freeCode camp certification</p></i>
+<form action="index.html" id="survey-form">
+    <label id="name-label" class="label">Name</label>
+    <input type="text" id="name" placeholder="Enter Name" name="Name" required>
+    <label id="email-label" class="label">Email</label>
+   <input type="email" name="Email" id="email" placeholder="Enter Email" required>
+   <label id="number-label" class="label">Age</label>
+   <input type="number" name="age" id="number" placeholder="Enter Age" min="18" max="70" required>
+   <label id="source" class="label">From where you came to know about freeCodeCamp?</label>
+    <select name="reach-way" id="dropdown">
+        <option value="friend">Friend</option>
+        <option value="internet">Internet</option>
+        <option value="newspaper">NewsPaper</option>
+        <option value="tutor">Tutor</option>        
+    </select>
+    <p class="label">Will You recommed freeCodeCamp to others?</p>
+    <span><input type="radio" class="radio" name="refer" value="will" checked> <label for="will">Will Recommend</label>
+    </span>
+    <span><input type="radio" name="refer" value="will-not">
+    <label for="will-not">Will Not Recommend</label></span>
+    <p class="label">Select the languages you know:</p>
+    <span><input type="checkbox" name="lg1" value="CSS">
+    <label for="lg1">CSS</label></span>
+    <span><input type="checkbox" name="lg2" value="HTML">
+    <label for="lg2">HTML</label></span>
+    <p class="label">Any comments or suggestions</p>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    <br>
+    <button type="submit" id="submit">Submit
+    </button>
+</form>
+</div>
+</body>
+</html>
